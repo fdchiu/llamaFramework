@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOS_Llama_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS Llama Example" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHT-oN-79b">
+                                <rect key="frame" x="71" y="165" width="240" height="33.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="llamacpp" translatesAutoresizingMaskIntoConstraints="NO" id="Xiz-FB-Cwf">
+                                <rect key="frame" x="71" y="245" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="qx6-Xa-pKy"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Maf-yD-8Oy">
+                                <rect key="frame" x="152" y="576" width="78" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Submit"/>
+                                <connections>
+                                    <action selector="submit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BYN-Cr-vna"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mLQ-iK-Eap">
+                                <rect key="frame" x="25" y="393" width="332" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="topicsTextReady:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="a08-b6-vsV"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="iHg-RT-FTq"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Xiz-FB-Cwf" firstAttribute="centerX" secondItem="bHT-oN-79b" secondAttribute="centerX" id="3f0-J6-bS6"/>
+                            <constraint firstItem="Xiz-FB-Cwf" firstAttribute="centerX" secondItem="Maf-yD-8Oy" secondAttribute="centerX" id="5Ma-xL-mEi"/>
+                            <constraint firstItem="Xiz-FB-Cwf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="71" id="SLN-MK-U5M"/>
+                            <constraint firstItem="Xiz-FB-Cwf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="245" id="T3f-vd-5Gf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Maf-yD-8Oy" secondAttribute="bottom" constant="207" id="WaY-aH-AID"/>
+                            <constraint firstItem="mLQ-iK-Eap" firstAttribute="centerX" secondItem="Xiz-FB-Cwf" secondAttribute="centerX" id="eXG-pD-gXr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xiz-FB-Cwf" secondAttribute="trailing" constant="82" id="if7-b9-7a4"/>
+                            <constraint firstItem="mLQ-iK-Eap" firstAttribute="top" secondItem="Xiz-FB-Cwf" secondAttribute="bottom" constant="20" id="l2V-VB-WNA"/>
+                            <constraint firstItem="Xiz-FB-Cwf" firstAttribute="top" secondItem="bHT-oN-79b" secondAttribute="bottom" constant="46.333333333333371" id="sv4-vQ-Zd3"/>
+                            <constraint firstItem="Xiz-FB-Cwf" firstAttribute="leading" secondItem="bHT-oN-79b" secondAttribute="leading" id="tT9-3Q-LF8"/>
+                            <constraint firstItem="mLQ-iK-Eap" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="xHQ-o7-67W"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="topicsText" destination="mLQ-iK-Eap" id="fcx-cP-saf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.824427480916029" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="llamacpp" width="1500" height="500"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
