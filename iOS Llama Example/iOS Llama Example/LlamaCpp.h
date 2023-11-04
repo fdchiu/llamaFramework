@@ -9,6 +9,6 @@
 
 @interface LlamaCpp : NSObject {
 }
-+ (void)start: (const char*)prompt;
++ (void)start: (const char*)prompt completion:(void(^)(const char *))callback;
 
 @end

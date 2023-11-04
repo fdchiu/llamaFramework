@@ -103,7 +103,7 @@ static void sigint_handler(int signo) {
 }
 #endif
 
-int llama_main(int argc, char ** argv) {
+int llama_main(int argc, char ** argv, void (*callback)(const char*)) {
     gpt_params params;
     g_params = &params;
 
@@ -653,6 +653,7 @@ int llama_main(int argc, char ** argv) {
             for (auto id : embd) {
                 const std::string token_str = llama_token_to_piece(ctx, id);
                 printf("%s", token_str.c_str());
+                callback(token_str.c_str());
 
                 if (embd.size() > 1) {
                     input_tokens.push_back(id);

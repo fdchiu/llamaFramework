@@ -39,7 +39,11 @@ public func copyFilesFromBundleToDocumentsFolderWith(fileExtension: String) {
 
             for fileName in filteredFiles {
                 if let documentsURL = documentsURL {
-                    let sourceURL = Bundle.main.bundleURL.appendingPathComponent(prefix+"/models/"+fileName)
+                    var sourceURL = Bundle.main.bundleURL.appendingPathComponent(prefix+"models/"+fileName)
+#if os(OSX)
+                        sourceURL = Bundle.main.resourceURL!.appendingPathComponent(prefix+"models/"+fileName)
+#endif
+                    
                     let destURL = subdir.appendingPathComponent(fileName)
                     #if DEBUG
                         print("copying: \(fileName) to app's Document/models dir")

@@ -1,0 +1,6 @@
+framework module llamaMacOS {
+  umbrella header "llamaMacOS.h"
+  export *
+
+  module * { export * }
+}

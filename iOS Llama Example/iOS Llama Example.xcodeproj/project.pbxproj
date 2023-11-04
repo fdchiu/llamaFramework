@@ -14,6 +14,18 @@
 		6302AE742AF409A10032F9A5 /* ggml-metal.metal in Sources */ = {isa = PBXBuildFile; fileRef = 6302AE732AF409A10032F9A5 /* ggml-metal.metal */; };
 		6302AE772AF414CC0032F9A5 /* llamaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6302AE762AF414CC0032F9A5 /* llamaFramework.framework */; };
 		6302AE782AF414CC0032F9A5 /* llamaFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6302AE762AF414CC0032F9A5 /* llamaFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		636387E62AF5634000157A01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636387E52AF5634000157A01 /* AppDelegate.swift */; };
+		636387E82AF5634000157A01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636387E72AF5634000157A01 /* ViewController.swift */; };
+		636387EA2AF5634100157A01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 636387E92AF5634100157A01 /* Assets.xcassets */; };
+		636387ED2AF5634100157A01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 636387EB2AF5634100157A01 /* Main.storyboard */; };
+		636387F32AF5637400157A01 /* llamaMacOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636387F22AF5637400157A01 /* llamaMacOS.framework */; };
+		636387F42AF5637400157A01 /* llamaMacOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 636387F22AF5637400157A01 /* llamaMacOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		636387F62AF5677100157A01 /* llama_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6302AE5F2AF2B7B20032F9A5 /* llama_main.cpp */; };
+		636387F72AF5685D00157A01 /* ggml-metal.metal in Sources */ = {isa = PBXBuildFile; fileRef = 6302AE732AF409A10032F9A5 /* ggml-metal.metal */; };
+		636387F82AF5686300157A01 /* Util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6302AE612AF2BF5F0032F9A5 /* Util.cpp */; };
+		636387F92AF5686A00157A01 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6302AE672AF2CEEE0032F9A5 /* Helper.swift */; };
+		636387FA2AF569C900157A01 /* LlamaCpp.mm in Sources */ = {isa = PBXBuildFile; fileRef = 63E836D52AF1D5EE008EF2E2 /* LlamaCpp.mm */; };
+		636387FB2AF56A9C00157A01 /* models in Resources */ = {isa = PBXBuildFile; fileRef = 6302AE652AF2CB1F0032F9A5 /* models */; };
 		63E836B92AF01FCD008EF2E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E836B82AF01FCD008EF2E2 /* AppDelegate.swift */; };
 		63E836BB2AF01FCD008EF2E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E836BA2AF01FCD008EF2E2 /* SceneDelegate.swift */; };
 		63E836BD2AF01FCD008EF2E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E836BC2AF01FCD008EF2E2 /* ViewController.swift */; };
@@ -35,6 +47,17 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		636387F52AF5637400157A01 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				636387F42AF5637400157A01 /* llamaMacOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +68,13 @@
 		6302AE672AF2CEEE0032F9A5 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		6302AE732AF409A10032F9A5 /* ggml-metal.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = "ggml-metal.metal"; sourceTree = "<group>"; };
 		6302AE762AF414CC0032F9A5 /* llamaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = llamaFramework.framework; path = ../llamaFramework.framework; sourceTree = "<group>"; };
+		636387E32AF5634000157A01 /* llamaMacExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = llamaMacExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		636387E52AF5634000157A01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		636387E72AF5634000157A01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		636387E92AF5634100157A01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		636387EC2AF5634100157A01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		636387EE2AF5634100157A01 /* llamaMacExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = llamaMacExample.entitlements; sourceTree = "<group>"; };
+		636387F22AF5637400157A01 /* llamaMacOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = llamaMacOS.framework; path = ../llamaMacOS.framework; sourceTree = "<group>"; };
 		63E836B52AF01FCD008EF2E2 /* iOS Llama Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Llama Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E836B82AF01FCD008EF2E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63E836BA2AF01FCD008EF2E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +90,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		636387E02AF5634000157A01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				636387F32AF5637400157A01 /* llamaMacOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		63E836B22AF01FCD008EF2E2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -71,10 +109,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		636387E42AF5634000157A01 /* llamaMacExample */ = {
+			isa = PBXGroup;
+			children = (
+				636387E52AF5634000157A01 /* AppDelegate.swift */,
+				636387E72AF5634000157A01 /* ViewController.swift */,
+				636387E92AF5634100157A01 /* Assets.xcassets */,
+				636387EB2AF5634100157A01 /* Main.storyboard */,
+				636387EE2AF5634100157A01 /* llamaMacExample.entitlements */,
+			);
+			path = llamaMacExample;
+			sourceTree = "<group>";
+		};
 		63E836AC2AF01FCD008EF2E2 = {
 			isa = PBXGroup;
 			children = (
 				63E836B72AF01FCD008EF2E2 /* iOS Llama Example */,
+				636387E42AF5634000157A01 /* llamaMacExample */,
 				63E836B62AF01FCD008EF2E2 /* Products */,
 				63E836CC2AF02666008EF2E2 /* Frameworks */,
 			);
@@ -84,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				63E836B52AF01FCD008EF2E2 /* iOS Llama Example.app */,
+				636387E32AF5634000157A01 /* llamaMacExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,6 +167,7 @@
 		63E836CC2AF02666008EF2E2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				636387F22AF5637400157A01 /* llamaMacOS.framework */,
 				6302AE762AF414CC0032F9A5 /* llamaFramework.framework */,
 			);
 			name = Frameworks;
@@ -123,6 +176,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		636387E22AF5634000157A01 /* llamaMacExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 636387F12AF5634100157A01 /* Build configuration list for PBXNativeTarget "llamaMacExample" */;
+			buildPhases = (
+				636387DF2AF5634000157A01 /* Sources */,
+				636387E02AF5634000157A01 /* Frameworks */,
+				636387E12AF5634000157A01 /* Resources */,
+				636387F52AF5637400157A01 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = llamaMacExample;
+			productName = llamaMacExample;
+			productReference = 636387E32AF5634000157A01 /* llamaMacExample.app */;
+			productType = "com.apple.product-type.application";
+		};
 		63E836B42AF01FCD008EF2E2 /* iOS Llama Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63E836C92AF01FCE008EF2E2 /* Build configuration list for PBXNativeTarget "iOS Llama Example" */;
@@ -153,6 +224,9 @@
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					636387E22AF5634000157A01 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
 					63E836B42AF01FCD008EF2E2 = {
 						CreatedOnToolsVersion = 15.0.1;
 						LastSwiftMigration = 1500;
@@ -175,11 +249,22 @@
 			projectRoot = "";
 			targets = (
 				63E836B42AF01FCD008EF2E2 /* iOS Llama Example */,
+				636387E22AF5634000157A01 /* llamaMacExample */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		636387E12AF5634000157A01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				636387FB2AF56A9C00157A01 /* models in Resources */,
+				636387EA2AF5634100157A01 /* Assets.xcassets in Resources */,
+				636387ED2AF5634100157A01 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		63E836B32AF01FCD008EF2E2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -194,6 +279,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		636387DF2AF5634000157A01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				636387FA2AF569C900157A01 /* LlamaCpp.mm in Sources */,
+				636387F92AF5686A00157A01 /* Helper.swift in Sources */,
+				636387F82AF5686300157A01 /* Util.cpp in Sources */,
+				636387F72AF5685D00157A01 /* ggml-metal.metal in Sources */,
+				636387F62AF5677100157A01 /* llama_main.cpp in Sources */,
+				636387E82AF5634000157A01 /* ViewController.swift in Sources */,
+				636387E62AF5634000157A01 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		63E836B12AF01FCD008EF2E2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -212,6 +311,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		636387EB2AF5634100157A01 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				636387EC2AF5634100157A01 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		63E836BE2AF01FCD008EF2E2 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -231,6 +338,70 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		636387EF2AF5634100157A01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = llamaMacExample/llamaMacExample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F5A9R6LVGQ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = ../;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "../llama.cppSrc/**";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.creataai.llamaMacExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "iOS Llama Example/iOS Llama Example-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		636387F02AF5634100157A01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = llamaMacExample/llamaMacExample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F5A9R6LVGQ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = ../;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "../llama.cppSrc/**";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.creataai.llamaMacExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "iOS Llama Example/iOS Llama Example-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		63E836C72AF01FCE008EF2E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -362,7 +533,7 @@
 				DEVELOPMENT_TEAM = F5A9R6LVGQ;
 				FRAMEWORK_SEARCH_PATHS = ../;
 				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = "../llama.cppSrc/**";
+				HEADER_SEARCH_PATHS = ../llama.cppSrc;
 				INFOPLIST_FILE = "iOS Llama Example/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -397,7 +568,7 @@
 				DEVELOPMENT_TEAM = F5A9R6LVGQ;
 				FRAMEWORK_SEARCH_PATHS = ../;
 				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = "../llama.cppSrc/**";
+				HEADER_SEARCH_PATHS = ../llama.cppSrc;
 				INFOPLIST_FILE = "iOS Llama Example/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -422,6 +593,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		636387F12AF5634100157A01 /* Build configuration list for PBXNativeTarget "llamaMacExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				636387EF2AF5634100157A01 /* Debug */,
+				636387F02AF5634100157A01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		63E836B02AF01FCD008EF2E2 /* Build configuration list for PBXProject "iOS Llama Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

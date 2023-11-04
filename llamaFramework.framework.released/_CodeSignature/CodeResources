@@ -16,10 +16,6 @@
 		<data>
 		MlJsZG+kmCgK753KN8IZVJBxTAY=
 		</data>
-		<key>default.metallib</key>
-		<data>
-		9zFnlbNWn+PX00pyhNGjEeYFiGQ=
-		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -35,13 +31,6 @@
 			<key>hash2</key>
 			<data>
 			dHSiH0+tnVNc03TySpAiQGnRNdeZQ9T7ROdXFkgHFq0=
-			</data>
-		</dict>
-		<key>default.metallib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			au+kJkY5HAeecu6M8zqT3wUMiU5I+6Ae9Yjslb/CfNU=
 			</data>
 		</dict>
 	</dict>

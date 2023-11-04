@@ -1,0 +1,6 @@
+framework module llamaFramework {
+  umbrella header "llamaFramework.h"
+  export *
+
+  module * { export * }
+}
