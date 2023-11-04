@@ -533,7 +533,7 @@
 				DEVELOPMENT_TEAM = F5A9R6LVGQ;
 				FRAMEWORK_SEARCH_PATHS = ../;
 				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = ../llama.cppSrc;
+				HEADER_SEARCH_PATHS = "../llama.cppSrc/**";
 				INFOPLIST_FILE = "iOS Llama Example/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -568,7 +568,7 @@
 				DEVELOPMENT_TEAM = F5A9R6LVGQ;
 				FRAMEWORK_SEARCH_PATHS = ../;
 				GENERATE_INFOPLIST_FILE = YES;
-				HEADER_SEARCH_PATHS = ../llama.cppSrc;
+				HEADER_SEARCH_PATHS = "../llama.cppSrc/**";
 				INFOPLIST_FILE = "iOS Llama Example/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;

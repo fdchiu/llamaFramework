@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var submitButton: UIButton!
+    @IBOutlet weak var chatText: UITextView!
     @IBOutlet weak var topicsText: UITextField!
     let modelName = "mistral-7b-instruct-v0.1.Q4_K_M.gguf"
     override func viewDidLoad() {
@@ -26,10 +28,24 @@ class ViewController: UIViewController {
 
     @IBAction func topicsTextReady(_ sender: Any) {
     }
-    @IBAction func submit(_ sender: Any) {
+    
+    @objc
+    func llamaCallback(_ chatReply: UnsafePointer<CChar>?) -> Void {
+        DispatchQueue.main.async {
+            if let reply = chatReply {
+                print("- \(String( cString: reply))")
+                self.chatText.text = String( cString: reply)
+            }
+        }
+    }
+
+    @IBAction func submit(_ sender: Any)  {
+        let question = UnsafePointer<Int8>(self.topicsText.text!)
+        //submitButton.isEnabled = false
         //if topicsText.hasText {
-            LlamaCpp.start(UnsafePointer<Int8>(topicsText.text!))
-        //}
+        DispatchQueue.global(qos: .userInitiated).async {
+            LlamaCpp.start(question, completion: self.llamaCallback(_:))
+        }
     }
     
 }
