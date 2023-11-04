@@ -112,8 +112,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "30"
             endingLineNumber = "30"
-            landmarkName = "ViewController"
-            landmarkType = "3">
+            landmarkName = "topicsTextReady(_:)"
+            landmarkType = "7">
             <Locations>
                <Location
                   uuid = "815BD6E8-CE01-4B1F-AF2F-C28A196C654D - 1d94268999f2c935"
