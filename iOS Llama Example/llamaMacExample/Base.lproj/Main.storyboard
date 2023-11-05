@@ -685,7 +685,7 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                    <window key="window" title="Local GPT" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
@@ -702,33 +702,24 @@
             </objects>
             <point key="canvasLocation" x="75" y="250"/>
         </scene>
-        <!--View Controller-->
+        <!--Llama OS X-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="llamaMacExample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Llama OS X" id="XfG-lQ-9wD" customClass="ViewController" customModule="llamaMacExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="727" height="496"/>
+                        <rect key="frame" x="0.0" y="0.0" width="714" height="659"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="18q-uD-lJx">
-                                <rect key="frame" x="29" y="61" width="678" height="378"/>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="x3w-Q0-hAn">
+                                <rect key="frame" x="29" y="591" width="115" height="48"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="678" id="bHL-V4-doE"/>
-                                    <constraint firstAttribute="height" constant="378" id="xrc-Cb-9a3"/>
+                                    <constraint firstAttribute="width" constant="115" id="2Cb-Eb-PQE"/>
+                                    <constraint firstAttribute="height" constant="48" id="9qK-Kk-33P"/>
                                 </constraints>
-                                <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="7Wq-Mv-Pgk">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x3w-Q0-hAn">
-                                <rect key="frame" x="183" y="440" width="115" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="llamacpp" id="ssg-wF-N1S"/>
                             </imageView>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="c3v-eY-Iwf">
-                                <rect key="frame" x="332" y="19" width="63" height="32"/>
+                                <rect key="frame" x="326" y="19" width="63" height="32"/>
                                 <buttonCell key="cell" type="push" title="Chat" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Tge-Y1-siu">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -737,21 +728,69 @@
                                     <action selector="startChat:" target="XfG-lQ-9wD" id="etj-J5-HGl"/>
                                 </connections>
                             </button>
+                            <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bw5-ry-Nlj">
+                                <rect key="frame" x="29" y="66" width="665" height="424"/>
+                                <clipView key="contentView" drawsBackground="NO" id="TRm-vQ-tIE">
+                                    <rect key="frame" x="0.0" y="0.0" width="665" height="424"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView wantsLayer="YES" importsGraphics="NO" richText="NO" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="LGo-uI-xao">
+                                            <rect key="frame" x="0.0" y="0.0" width="665" height="424"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <size key="minSize" width="665" height="424"/>
+                                            <size key="maxSize" width="665" height="10000000"/>
+                                            <color key="insertionPointColor" name="textInsertionPointColor" catalog="System" colorSpace="catalog"/>
+                                        </textView>
+                                    </subviews>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="4jp-8c-qVd">
+                                    <rect key="frame" x="-100" y="-100" width="240" height="16"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="bIW-6h-tYQ">
+                                    <rect key="frame" x="649" y="0.0" width="16" height="424"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                            <textField focusRingType="none" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="CcM-Zy-X3C">
+                                <rect key="frame" x="29" y="511" width="665" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="xG5-Uk-3VF"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Enter question here" drawsBackground="YES" id="H11-dG-YJy">
+                                    <font key="font" metaFont="system" size="18"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <connections>
+                                    <action selector="submit:" target="XfG-lQ-9wD" id="BLZ-Iy-eOE"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="c3v-eY-Iwf" secondAttribute="bottom" constant="26" id="Dr7-Fb-erq"/>
-                            <constraint firstItem="c3v-eY-Iwf" firstAttribute="top" secondItem="18q-uD-lJx" secondAttribute="bottom" constant="15" id="d3p-mg-MpA"/>
-                            <constraint firstItem="c3v-eY-Iwf" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="pzo-Ex-TAo"/>
-                            <constraint firstItem="c3v-eY-Iwf" firstAttribute="centerX" secondItem="18q-uD-lJx" secondAttribute="centerX" constant="-4.5" id="zo1-Da-bsX"/>
+                            <constraint firstItem="CcM-Zy-X3C" firstAttribute="leading" secondItem="bw5-ry-Nlj" secondAttribute="leading" id="2lQ-Jb-ebM"/>
+                            <constraint firstItem="CcM-Zy-X3C" firstAttribute="trailing" secondItem="bw5-ry-Nlj" secondAttribute="trailing" id="3Lh-Ua-GLq"/>
+                            <constraint firstAttribute="trailing" secondItem="CcM-Zy-X3C" secondAttribute="trailing" constant="20" symbolic="YES" id="4DV-As-h9G"/>
+                            <constraint firstItem="c3v-eY-Iwf" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="4Jc-Yn-tX0"/>
+                            <constraint firstItem="CcM-Zy-X3C" firstAttribute="leading" secondItem="x3w-Q0-hAn" secondAttribute="leading" id="5IG-dT-wmc"/>
+                            <constraint firstAttribute="bottom" secondItem="c3v-eY-Iwf" secondAttribute="bottom" constant="26" id="95L-Rq-2r6"/>
+                            <constraint firstItem="bw5-ry-Nlj" firstAttribute="top" secondItem="CcM-Zy-X3C" secondAttribute="bottom" constant="21" id="JYZ-uQ-YkU"/>
+                            <constraint firstItem="CcM-Zy-X3C" firstAttribute="top" secondItem="x3w-Q0-hAn" secondAttribute="bottom" constant="8" symbolic="YES" id="Wdy-OY-8lR"/>
+                            <constraint firstItem="c3v-eY-Iwf" firstAttribute="top" secondItem="bw5-ry-Nlj" secondAttribute="bottom" constant="20" symbolic="YES" id="hI0-DR-sER"/>
+                            <constraint firstItem="CcM-Zy-X3C" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="76" id="j4v-Jf-Bus"/>
+                            <constraint firstItem="x3w-Q0-hAn" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="29" id="saE-zA-cfX"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="topicstext" destination="18q-uD-lJx" id="qXZ-nr-1Ns"/>
+                        <outlet property="answerText" destination="LGo-uI-xao" id="TBe-ht-sxk"/>
+                        <outlet property="questionText" destination="CcM-Zy-X3C" id="9so-LL-Va5"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="198.5" y="768"/>
+            <point key="canvasLocation" x="82" y="928.5"/>
         </scene>
     </scenes>
     <resources>

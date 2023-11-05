@@ -10,7 +10,15 @@ import Cocoa
 class ViewController: NSViewController {
     @IBOutlet weak var topicstext: NSTextField!
     
+    @IBOutlet var answerText: NSTextView!
+    @IBOutlet weak var questionText: NSTextField!
+    let modelName = "mistral-7b-instruct-v0.1.Q4_K_M.gguf"
+    
+    var llamaWrapper: LlamaCppWrapper!
+    
     override func viewDidLoad() {
+        llamaWrapper = LlamaCppWrapper()
+        llamaWrapper.loadModel(modelName)
         super.viewDidLoad()
         copyFilesFromBundleToDocumentsFolderWith(fileExtension: ".gguf")
 
@@ -22,23 +30,26 @@ class ViewController: NSViewController {
         // Update the view, if already loaded.
         }
     }
+    @IBAction func submit(_ sender: Any) {
+        //self.startChat(sender)
+    }
     
     @objc
     func llamaCallback(_ chatReply: UnsafePointer<CChar>?) -> Void {
         DispatchQueue.main.async {
             if let reply = chatReply {
                 print("- \(String( cString: reply))")
-                self.topicstext.stringValue = String( cString: reply)
+                self.answerText.string = String( cString: reply)
             }
         }
     }
     //T##((UnsafePointer<CChar>?) -> Void)?##((UnsafePointer<CChar>?) -> Void)?##(UnsafePointer<CChar>?) -> Void
     
     @IBAction func startChat(_ sender: Any) {
-        // cannot run in background somehow
+        let questionStr = self.questionText.stringValue
         DispatchQueue.global(qos: .userInitiated).async {
             
-            LlamaCpp.start("what day is today", completion: self.llamaCallback(_:))
+            self.llamaWrapper.chat(questionStr, completion: self.llamaCallback(_:))
             /*var args: [String]
              const char args_const[6][128]={" ./main", "-m", "models/mistral-7b-instruct-v0.1.Q4_K_M.gguf", "-p", "what date is today", "-e"};
              for(int i=0;i<6;i++) {

@@ -7,8 +7,12 @@
 
 #import <Foundation/Foundation.h>
 
-@interface LlamaCpp : NSObject {
+@interface LlamaCppWrapper : NSObject {
+    char* modelName;
+    char* parameters[64];
 }
-+ (void)start: (const char*)prompt completion:(void(^)(const char *))callback;
+- (void) loadModel: (const char*) modelName;
+
+- (void)chat: (const char*)prompt completion:(void(^)(const char *))callback;
 
 @end

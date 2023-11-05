@@ -9,6 +9,7 @@
 #import "LlamaCpp.h"
 #include <stdio.h>
 #include <string.h>
+#include <string>
 
 
 int llama_main(int argc, char ** argv, void (*callback)(const char*));
@@ -16,12 +17,18 @@ int llama_main(int argc, char ** argv, void (*callback)(const char*));
 using namespace std;
 
 char* chatBuffer = nullptr;
+const int MODEL_NAME_LENGTH = 512;
 
 typedef void (^ llamaHandlerType)(const char*);
 static llamaHandlerType _llamaHandler;
 
-@implementation LlamaCpp {
+@implementation LlamaCppWrapper {
     NSMutableDictionary* classifiers;
+}
+
+-(void) loadModel: (const char*) modelName {
+    self->modelName = (char*)malloc(sizeof(char)*MODEL_NAME_LENGTH);
+    strcpy(self->modelName, modelName);
 }
 
 void  llamaCallback(const char* ret) {
@@ -31,7 +38,7 @@ void  llamaCallback(const char* ret) {
     
 }
 
-+ (void) start: (const char*)prompt completion:(void (^)(const char *))callback {
+- (void) chat: (const char*)prompt completion:(void (^)(const char *))callback {
     if(chatBuffer == nullptr) {
         chatBuffer = (char*)malloc(sizeof(char)*2048);
         chatBuffer[0] = NULL;
@@ -40,14 +47,28 @@ void  llamaCallback(const char* ret) {
     }
     _llamaHandler = [callback copy];
     char *args[10];
-    const char args_const[6][128]={" ./main", "-m", "models/mistral-7b-instruct-v0.1.Q4_K_M.gguf", "-p", "what date is today", "-e"};
-    for(int i=0;i<6;i++) {
+    std::string params[] = {" ./main", "-m", "-p"};
+    const char args_const[][128]={"./main", "-m", "models/mistral-7b-instruct-v0.1.Q4_K_M.gguf", "-p", "what date is today", "-n", "-2", "-i", "-e"};
+    int argc = 9 ;//sizeof(args_const);
+    for(int i=0;i<argc;i++) {
         args[i] = (char*)malloc(sizeof(char)*128);
-        strcpy(args[i], args_const[i]);
+            if(i==2){
+                strcpy(args[2], "models/");
+                strcat(args[2], modelName);
+            }
+            if(i==3){
+                strcpy(args[3], "-p");
+            }
+            if(i==4){
+                strcpy(args[4], prompt);
+            }
+        else {
+            strcpy(args[i], args_const[i]);
+        }
     }
     //strcpy(args[4], "what date is today");
 
-    printf("%s", args[1]);
+    //printf("%s", args[1]);
     llama_main(5, (char**)args, &llamaCallback);
 }
 
