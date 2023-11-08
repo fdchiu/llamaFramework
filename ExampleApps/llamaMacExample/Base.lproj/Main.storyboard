@@ -711,7 +711,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="x3w-Q0-hAn">
-                                <rect key="frame" x="29" y="591" width="115" height="48"/>
+                                <rect key="frame" x="569" y="591" width="115" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="115" id="2Cb-Eb-PQE"/>
                                     <constraint firstAttribute="height" constant="48" id="9qK-Kk-33P"/>
@@ -768,19 +768,24 @@
                                     <action selector="submit:" target="XfG-lQ-9wD" id="BLZ-Iy-eOE"/>
                                 </connections>
                             </textField>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0ss-C6-9dv" userLabel="logo">
+                                <rect key="frame" x="515" y="599" width="40" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="creataAIcon" id="yJe-b0-G9j"/>
+                            </imageView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="CcM-Zy-X3C" firstAttribute="leading" secondItem="bw5-ry-Nlj" secondAttribute="leading" id="2lQ-Jb-ebM"/>
                             <constraint firstItem="CcM-Zy-X3C" firstAttribute="trailing" secondItem="bw5-ry-Nlj" secondAttribute="trailing" id="3Lh-Ua-GLq"/>
                             <constraint firstAttribute="trailing" secondItem="CcM-Zy-X3C" secondAttribute="trailing" constant="20" symbolic="YES" id="4DV-As-h9G"/>
                             <constraint firstItem="c3v-eY-Iwf" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="4Jc-Yn-tX0"/>
-                            <constraint firstItem="CcM-Zy-X3C" firstAttribute="leading" secondItem="x3w-Q0-hAn" secondAttribute="leading" id="5IG-dT-wmc"/>
+                            <constraint firstItem="CcM-Zy-X3C" firstAttribute="leading" secondItem="x3w-Q0-hAn" secondAttribute="leading" constant="-540" id="5IG-dT-wmc"/>
                             <constraint firstAttribute="bottom" secondItem="c3v-eY-Iwf" secondAttribute="bottom" constant="26" id="95L-Rq-2r6"/>
                             <constraint firstItem="bw5-ry-Nlj" firstAttribute="top" secondItem="CcM-Zy-X3C" secondAttribute="bottom" constant="21" id="JYZ-uQ-YkU"/>
                             <constraint firstItem="CcM-Zy-X3C" firstAttribute="top" secondItem="x3w-Q0-hAn" secondAttribute="bottom" constant="8" symbolic="YES" id="Wdy-OY-8lR"/>
                             <constraint firstItem="c3v-eY-Iwf" firstAttribute="top" secondItem="bw5-ry-Nlj" secondAttribute="bottom" constant="20" symbolic="YES" id="hI0-DR-sER"/>
                             <constraint firstItem="CcM-Zy-X3C" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="76" id="j4v-Jf-Bus"/>
-                            <constraint firstItem="x3w-Q0-hAn" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="29" id="saE-zA-cfX"/>
+                            <constraint firstItem="x3w-Q0-hAn" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="569" id="saE-zA-cfX"/>
                         </constraints>
                     </view>
                     <connections>
@@ -795,6 +800,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="creataAIcon" width="454" height="468"/>
         <image name="llamacpp" width="1500" height="500"/>
     </resources>
 </document>
