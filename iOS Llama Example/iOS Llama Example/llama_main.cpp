@@ -103,7 +103,7 @@ static void sigint_handler(int signo) {
 }
 #endif
 
-int llama_main(int argc, char ** argv, void (*callback)(const char*)) {
+int llama_main(int argc, char ** argv, void (*callback)(const char*), void (*completionCallback)(void)) {
     gpt_params params;
     g_params = &params;
 
@@ -814,7 +814,7 @@ int llama_main(int argc, char ** argv, void (*callback)(const char*)) {
         // end of text token
         if (!embd.empty() && embd.back() == llama_token_eos(model) && !(params.instruct || params.interactive)) {
             LOG_TEE(" [end of text]\n");
-            //callback("[end]")
+            completionCallback();
             break;
         }
 

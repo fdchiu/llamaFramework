@@ -786,6 +786,7 @@
                     <connections>
                         <outlet property="answerText" destination="LGo-uI-xao" id="TBe-ht-sxk"/>
                         <outlet property="questionText" destination="CcM-Zy-X3C" id="9so-LL-Va5"/>
+                        <outlet property="submitButton" destination="c3v-eY-Iwf" id="gzl-sn-j1T"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

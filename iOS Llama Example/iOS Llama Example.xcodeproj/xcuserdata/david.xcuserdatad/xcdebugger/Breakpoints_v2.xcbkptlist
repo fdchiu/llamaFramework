@@ -14,8 +14,8 @@
             filePath = "iOS Llama Example/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
             landmarkName = "textFieldShouldReturn(_:)"
             landmarkType = "7">
             <Locations>
@@ -62,8 +62,8 @@
             filePath = "iOS Llama Example/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
             landmarkName = "textFieldDidEndEditing(_:)"
             landmarkType = "7">
             <Locations>
@@ -110,8 +110,8 @@
             filePath = "iOS Llama Example/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
             landmarkName = "topicsTextReady(_:)"
             landmarkType = "7">
             <Locations>
@@ -200,15 +200,15 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "2B1D9B48-0DEC-4BF7-A702-59D9F0A695C4"
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iOS Llama Example/LlamaCpp.mm"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "+start:completion:"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "-chat:response:"
             landmarkType = "7">
             <Locations>
                <Location
@@ -256,6 +256,66 @@
                   endingLineNumber = "43"
                   offsetFromSymbolStart = "228">
                </Location>
+               <Location
+                  uuid = "2B1D9B48-0DEC-4BF7-A702-59D9F0A695C4 - bb6b40b4e5954925"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[LlamaCppWrapper chat:completion:]"
+                  moduleName = "llamaMacExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/iOS%20Llama%20Example/iOS%20Llama%20Example/LlamaCpp.mm"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "204">
+               </Location>
+               <Location
+                  uuid = "2B1D9B48-0DEC-4BF7-A702-59D9F0A695C4 - b3f0890f6eb4e453"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[LlamaCppWrapper chat:response:]"
+                  moduleName = "iOS Llama Example"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/iOS%20Llama%20Example/iOS%20Llama%20Example/LlamaCpp.mm"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "204">
+               </Location>
+               <Location
+                  uuid = "2B1D9B48-0DEC-4BF7-A702-59D9F0A695C4 - b964ca1b8b36e0af"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[LlamaCppWrapper chat:response:]"
+                  moduleName = "llamaMacExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/iOS%20Llama%20Example/iOS%20Llama%20Example/LlamaCpp.mm"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "204">
+               </Location>
+               <Location
+                  uuid = "2B1D9B48-0DEC-4BF7-A702-59D9F0A695C4 - b964ca1b8b36fe23"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[LlamaCppWrapper chat:response:]"
+                  moduleName = "llamaMacExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/iOS%20Llama%20Example/iOS%20Llama%20Example/LlamaCpp.mm"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "204">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -263,16 +323,78 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "A6A92DFC-E6D0-4D91-8E61-6E72B74F5061"
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iOS Llama Example/LlamaCpp.mm"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "+start:completion:"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "-chat:response:"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A6A92DFC-E6D0-4D91-8E61-6E72B74F5061 - bb6b40b4e59555c1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[LlamaCppWrapper chat:completion:]"
+                  moduleName = "llamaMacExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/iOS%20Llama%20Example/iOS%20Llama%20Example/LlamaCpp.mm"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "816">
+               </Location>
+               <Location
+                  uuid = "A6A92DFC-E6D0-4D91-8E61-6E72B74F5061 - b3f0890f6eb4f94b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[LlamaCppWrapper chat:response:]"
+                  moduleName = "iOS Llama Example"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/iOS%20Llama%20Example/iOS%20Llama%20Example/LlamaCpp.mm"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "784">
+               </Location>
+               <Location
+                  uuid = "A6A92DFC-E6D0-4D91-8E61-6E72B74F5061 - b964ca1b8b36fdb7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[LlamaCppWrapper chat:response:]"
+                  moduleName = "llamaMacExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/iOS%20Llama%20Example/iOS%20Llama%20Example/LlamaCpp.mm"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "784">
+               </Location>
+               <Location
+                  uuid = "A6A92DFC-E6D0-4D91-8E61-6E72B74F5061 - b964ca1b8b36fa66"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[LlamaCppWrapper chat:response:]"
+                  moduleName = "llamaMacExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/iOS%20Llama%20Example/iOS%20Llama%20Example/LlamaCpp.mm"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "808">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -349,6 +471,36 @@
                   startingLineNumber = "110"
                   endingLineNumber = "110"
                   offsetFromSymbolStart = "116">
+               </Location>
+               <Location
+                  uuid = "DF778D1A-BDFE-454C-9C6B-461906C22B1A - b62a3f5c5c8b302d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "llama_main(int, char**, void (*)(char const*), void (*)())"
+                  moduleName = "iOS Llama Example"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/iOS%20Llama%20Example/iOS%20Llama%20Example/llama_main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "110"
+                  endingLineNumber = "110"
+                  offsetFromSymbolStart = "132">
+               </Location>
+               <Location
+                  uuid = "DF778D1A-BDFE-454C-9C6B-461906C22B1A - bcbe7c48b90934d1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "llama_main(int, char**, void (*)(char const*), void (*)())"
+                  moduleName = "llamaMacExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/iOS%20Llama%20Example/iOS%20Llama%20Example/llama_main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "110"
+                  endingLineNumber = "110"
+                  offsetFromSymbolStart = "132">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -427,6 +579,36 @@
                   startingLineNumber = "173"
                   endingLineNumber = "173"
                   offsetFromSymbolStart = "4528">
+               </Location>
+               <Location
+                  uuid = "CF27CE22-2081-4530-9FC5-CE43CF89CC9D - b62a3f5c5c8b3832"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "llama_main(int, char**, void (*)(char const*), void (*)())"
+                  moduleName = "iOS Llama Example"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/iOS%20Llama%20Example/iOS%20Llama%20Example/llama_main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "173"
+                  endingLineNumber = "173"
+                  offsetFromSymbolStart = "4544">
+               </Location>
+               <Location
+                  uuid = "CF27CE22-2081-4530-9FC5-CE43CF89CC9D - bcbe7c48b9093cce"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "llama_main(int, char**, void (*)(char const*), void (*)())"
+                  moduleName = "llamaMacExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/iOS%20Llama%20Example/iOS%20Llama%20Example/llama_main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "173"
+                  endingLineNumber = "173"
+                  offsetFromSymbolStart = "4544">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -633,6 +815,36 @@
                   endingLineNumber = "185"
                   offsetFromSymbolStart = "4660">
                </Location>
+               <Location
+                  uuid = "6BD5AC6A-7F59-4C65-9291-38A8AD958912 - b62a3f5c5c8b39c6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "llama_main(int, char**, void (*)(char const*), void (*)())"
+                  moduleName = "iOS Llama Example"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/iOS%20Llama%20Example/iOS%20Llama%20Example/llama_main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "185"
+                  endingLineNumber = "185"
+                  offsetFromSymbolStart = "4676">
+               </Location>
+               <Location
+                  uuid = "6BD5AC6A-7F59-4C65-9291-38A8AD958912 - bcbe7c48b9093d3a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "llama_main(int, char**, void (*)(char const*), void (*)())"
+                  moduleName = "llamaMacExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/iOS%20Llama%20Example/iOS%20Llama%20Example/llama_main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "185"
+                  endingLineNumber = "185"
+                  offsetFromSymbolStart = "4676">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -680,6 +892,21 @@
                   startingLineNumber = "53"
                   endingLineNumber = "53"
                   offsetFromSymbolStart = "4196">
+               </Location>
+               <Location
+                  uuid = "0CD51EEA-5EF0-47C3-89B2-0B5B8E06D2C2 - d974a15a3ac9ea70"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iOS_Llama_Example.copyFilesFromBundleToDocumentsFolderWith(fileExtension: Swift.String) -&gt; ()"
+                  moduleName = "iOS Llama Example"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/iOS%20Llama%20Example/iOS%20Llama%20Example/Helper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "3576">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -758,8 +985,8 @@
             filePath = "iOS Llama Example/llama_main.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "828"
-            endingLineNumber = "828"
+            startingLineNumber = "829"
+            endingLineNumber = "829"
             landmarkName = "llama_main(argc, argv)"
             landmarkType = "9">
             <Locations>
@@ -793,6 +1020,51 @@
                   endingLineNumber = "828"
                   offsetFromSymbolStart = "48168">
                </Location>
+               <Location
+                  uuid = "5EA6DDE4-0959-4E9A-A913-353830294679 - 86a5f5373338ce30"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "llama_main(int, char**, void (*)(char const*))"
+                  moduleName = "llamaMacExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/iOS%20Llama%20Example/iOS%20Llama%20Example/llama_main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "829"
+                  endingLineNumber = "829"
+                  offsetFromSymbolStart = "48168">
+               </Location>
+               <Location
+                  uuid = "5EA6DDE4-0959-4E9A-A913-353830294679 - b62a3f5c5c8b4cc2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "llama_main(int, char**, void (*)(char const*), void (*)())"
+                  moduleName = "iOS Llama Example"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/iOS%20Llama%20Example/iOS%20Llama%20Example/llama_main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "829"
+                  endingLineNumber = "829"
+                  offsetFromSymbolStart = "48200">
+               </Location>
+               <Location
+                  uuid = "5EA6DDE4-0959-4E9A-A913-353830294679 - bcbe7c48b909483e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "llama_main(int, char**, void (*)(char const*), void (*)())"
+                  moduleName = "llamaMacExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/iOS%20Llama%20Example/iOS%20Llama%20Example/llama_main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "829"
+                  endingLineNumber = "829"
+                  offsetFromSymbolStart = "48200">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -806,8 +1078,8 @@
             filePath = "iOS Llama Example/llama_main.cpp"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "833"
-            endingLineNumber = "833"
+            startingLineNumber = "834"
+            endingLineNumber = "834"
             landmarkName = "llama_main(argc, argv)"
             landmarkType = "9">
             <Locations>
@@ -840,6 +1112,51 @@
                   startingLineNumber = "833"
                   endingLineNumber = "833"
                   offsetFromSymbolStart = "48804">
+               </Location>
+               <Location
+                  uuid = "FFA94694-CC18-494D-BBF0-C5A8C59EE0CF - 86a5f5373338cf8b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "llama_main(int, char**, void (*)(char const*))"
+                  moduleName = "llamaMacExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/iOS%20Llama%20Example/iOS%20Llama%20Example/llama_main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "834"
+                  endingLineNumber = "834"
+                  offsetFromSymbolStart = "48804">
+               </Location>
+               <Location
+                  uuid = "FFA94694-CC18-494D-BBF0-C5A8C59EE0CF - b62a3f5c5c8b4d79"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "llama_main(int, char**, void (*)(char const*), void (*)())"
+                  moduleName = "iOS Llama Example"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/iOS%20Llama%20Example/iOS%20Llama%20Example/llama_main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "834"
+                  endingLineNumber = "834"
+                  offsetFromSymbolStart = "48836">
+               </Location>
+               <Location
+                  uuid = "FFA94694-CC18-494D-BBF0-C5A8C59EE0CF - bcbe7c48b9094985"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "llama_main(int, char**, void (*)(char const*), void (*)())"
+                  moduleName = "llamaMacExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/iOS%20Llama%20Example/iOS%20Llama%20Example/llama_main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "834"
+                  endingLineNumber = "834"
+                  offsetFromSymbolStart = "48836">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -888,6 +1205,36 @@
                   startingLineNumber = "816"
                   endingLineNumber = "816"
                   offsetFromSymbolStart = "47636">
+               </Location>
+               <Location
+                  uuid = "11087DB5-37E8-4C8B-A77B-F0969D1F3050 - b62a3f5c5c8b4f2f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "llama_main(int, char**, void (*)(char const*), void (*)())"
+                  moduleName = "iOS Llama Example"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/iOS%20Llama%20Example/iOS%20Llama%20Example/llama_main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "816"
+                  endingLineNumber = "816"
+                  offsetFromSymbolStart = "47656">
+               </Location>
+               <Location
+                  uuid = "11087DB5-37E8-4C8B-A77B-F0969D1F3050 - bcbe7c48b9094bd3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "llama_main(int, char**, void (*)(char const*), void (*)())"
+                  moduleName = "llamaMacExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/iOS%20Llama%20Example/iOS%20Llama%20Example/llama_main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "816"
+                  endingLineNumber = "816"
+                  offsetFromSymbolStart = "47656">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -951,6 +1298,36 @@
                   startingLineNumber = "191"
                   endingLineNumber = "191"
                   offsetFromSymbolStart = "5076">
+               </Location>
+               <Location
+                  uuid = "76AA7E8D-D055-44FD-BDEB-61FF296EDEE7 - b62a3f5c5c8b3e9c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "llama_main(int, char**, void (*)(char const*), void (*)())"
+                  moduleName = "iOS Llama Example"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/iOS%20Llama%20Example/iOS%20Llama%20Example/llama_main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "191"
+                  endingLineNumber = "191"
+                  offsetFromSymbolStart = "5096">
+               </Location>
+               <Location
+                  uuid = "76AA7E8D-D055-44FD-BDEB-61FF296EDEE7 - bcbe7c48b9093a60"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "llama_main(int, char**, void (*)(char const*), void (*)())"
+                  moduleName = "llamaMacExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/iOS%20Llama%20Example/iOS%20Llama%20Example/llama_main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "191"
+                  endingLineNumber = "191"
+                  offsetFromSymbolStart = "5096">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -1133,7 +1510,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "B89462BA-6544-4E8D-B4EE-7A31A82FE438"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../llama.cppSrc/ggml-metal.m"
@@ -1189,6 +1566,21 @@
                   endingLineNumber = "174"
                   offsetFromSymbolStart = "80">
                </Location>
+               <Location
+                  uuid = "B89462BA-6544-4E8D-B4EE-7A31A82FE438 - 86c3faf258346dcc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ggml_metal_init"
+                  moduleName = "llamaFramework"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/llama.cppSrc/ggml-metal.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "182"
+                  endingLineNumber = "182"
+                  offsetFromSymbolStart = "56">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -1196,7 +1588,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "B244BF5C-78D0-4767-8165-D5F7A778996E"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../llama.cppSrc/ggml-metal.m"
@@ -1251,6 +1643,21 @@
                   startingLineNumber = "167"
                   endingLineNumber = "167"
                   offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "B244BF5C-78D0-4767-8165-D5F7A778996E - 86c3faf258346bbd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ggml_metal_init"
+                  moduleName = "llamaFramework"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/llama.cppSrc/ggml-metal.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "167"
+                  endingLineNumber = "167"
+                  offsetFromSymbolStart = "28">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -1316,6 +1723,36 @@
                   endingLineNumber = "705"
                   offsetFromSymbolStart = "42664">
                </Location>
+               <Location
+                  uuid = "D756DB55-9789-47DB-964D-3051C54EC11C - b62a3f5c5c8b7cde"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "llama_main(int, char**, void (*)(char const*), void (*)())"
+                  moduleName = "iOS Llama Example"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/iOS%20Llama%20Example/iOS%20Llama%20Example/llama_main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "705"
+                  endingLineNumber = "705"
+                  offsetFromSymbolStart = "42684">
+               </Location>
+               <Location
+                  uuid = "D756DB55-9789-47DB-964D-3051C54EC11C - bcbe7c48b9097822"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "llama_main(int, char**, void (*)(char const*), void (*)())"
+                  moduleName = "llamaMacExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/iOS%20Llama%20Example/iOS%20Llama%20Example/llama_main.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "705"
+                  endingLineNumber = "705"
+                  offsetFromSymbolStart = "42684">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -1323,7 +1760,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "A7C3D1F8-057A-4EF2-B2F0-6AEFD86BC9A9"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../llama.cppSrc/ggml-alloc.c"
@@ -1371,6 +1808,36 @@
                   continueAfterRunningActions = "No"
                   symbolName = "ggml_allocr_new_measure"
                   moduleName = "llamaMacOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/llama.cppSrc/ggml-alloc.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "271"
+                  endingLineNumber = "271"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "A7C3D1F8-057A-4EF2-B2F0-6AEFD86BC9A9 - 2c2c5f4cd224b203"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ggml_allocr_new"
+                  moduleName = "llamaFramework"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/llama.cppSrc/ggml-alloc.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "271"
+                  endingLineNumber = "271"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "A7C3D1F8-057A-4EF2-B2F0-6AEFD86BC9A9 - 4f18eff2857406ac"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ggml_allocr_new_measure"
+                  moduleName = "llamaFramework"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/david/Project/llamaFramework/llama.cppSrc/ggml-alloc.c"
                   startingColumnNumber = "9223372036854775807"
@@ -1427,6 +1894,21 @@
                   endingLineNumber = "299"
                   offsetFromSymbolStart = "196">
                </Location>
+               <Location
+                  uuid = "DDA873B2-65CF-46BF-97A5-B84B7DC4065C - 4f18eff28574fac0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ggml_allocr_new_measure"
+                  moduleName = "llamaFramework"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/llama.cppSrc/ggml-alloc.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "299"
+                  endingLineNumber = "299"
+                  offsetFromSymbolStart = "196">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -1474,6 +1956,21 @@
                   startingLineNumber = "9000"
                   endingLineNumber = "9000"
                   offsetFromSymbolStart = "1620">
+               </Location>
+               <Location
+                  uuid = "A7515833-E396-4193-88FB-6334F19C0D0D - 60e7d961184906a3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "llama_new_context_with_model"
+                  moduleName = "llamaFramework"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/llama.cppSrc/llama.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "9000"
+                  endingLineNumber = "9000"
+                  offsetFromSymbolStart = "1604">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -1553,6 +2050,51 @@
                   endingLineNumber = "21"
                   offsetFromSymbolStart = "36">
                </Location>
+               <Location
+                  uuid = "529522C2-34E6-4D87-954F-C1931FDAEAF3 - e2d7f4badc67f051"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ggml_backend_buffer_init"
+                  moduleName = "llamaFramework"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/llama.cppSrc/ggml-backend.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "529522C2-34E6-4D87-954F-C1931FDAEAF3 - dd48f13cab093eef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ggml_backend_cpu_buffer_from_ptr"
+                  moduleName = "llamaFramework"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/llama.cppSrc/ggml-backend.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "529522C2-34E6-4D87-954F-C1931FDAEAF3 - 1838cc2825537e56"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ggml_backend_cpu_alloc_buffer"
+                  moduleName = "llamaFramework"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/llama.cppSrc/ggml-backend.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "36">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -1593,6 +2135,21 @@
                   continueAfterRunningActions = "No"
                   symbolName = "llama_new_context_with_model"
                   moduleName = "llamaMacOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/llama.cppSrc/llama.cpp"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "8940"
+                  endingLineNumber = "8940"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "EF65B5B7-A856-4544-BFCC-DDC233A3B7FC - 60e7d96118490d67"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "llama_new_context_with_model"
+                  moduleName = "llamaFramework"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/david/Project/llamaFramework/llama.cppSrc/llama.cpp"
                   startingColumnNumber = "9223372036854775807"
@@ -1649,6 +2206,21 @@
                   endingLineNumber = "305"
                   offsetFromSymbolStart = "20">
                </Location>
+               <Location
+                  uuid = "392E3E5A-FB5F-431E-B0D0-98F7BE663B2F - 7f303ffe3f8affad"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ggml_allocr_new_from_buffer"
+                  moduleName = "llamaFramework"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/llama.cppSrc/ggml-alloc.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "305"
+                  endingLineNumber = "305"
+                  offsetFromSymbolStart = "20">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -1656,7 +2228,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "083C6C06-4F3F-496C-949C-C70E2B3D802F"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../llama.cppSrc/ggml-alloc.c"
@@ -1704,6 +2276,36 @@
                   continueAfterRunningActions = "No"
                   symbolName = "ggml_allocr_new_measure"
                   moduleName = "llamaMacOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/llama.cppSrc/ggml-alloc.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "273"
+                  endingLineNumber = "273"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "083C6C06-4F3F-496C-949C-C70E2B3D802F - 2c2c5f4cd224b1c5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ggml_allocr_new"
+                  moduleName = "llamaFramework"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/llama.cppSrc/ggml-alloc.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "273"
+                  endingLineNumber = "273"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "083C6C06-4F3F-496C-949C-C70E2B3D802F - 4f18eff28574056a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ggml_allocr_new_measure"
+                  moduleName = "llamaFramework"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/david/Project/llamaFramework/llama.cppSrc/ggml-alloc.c"
                   startingColumnNumber = "9223372036854775807"
@@ -1760,6 +2362,21 @@
                   endingLineNumber = "271"
                   offsetFromSymbolStart = "32">
                </Location>
+               <Location
+                  uuid = "F615AFCD-C558-417C-B8CD-58CC52C4BEF9 - 2c2c5f4cd224b203"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ggml_allocr_new"
+                  moduleName = "llamaFramework"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/llama.cppSrc/ggml-alloc.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "271"
+                  endingLineNumber = "271"
+                  offsetFromSymbolStart = "32">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -1767,7 +2384,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "62EB2E8C-9441-43DB-BB6E-636BFF22946D"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../llama.cppSrc/ggml-backend.c"
@@ -1777,6 +2394,256 @@
             endingLineNumber = "206"
             landmarkName = "ggml_backend_cpu_buffer_get_base(buffer)"
             landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "62EB2E8C-9441-43DB-BB6E-636BFF22946D - 83ec2a392b73eed3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ggml_backend_cpu_buffer_get_base"
+                  moduleName = "llamaMacOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/llama.cppSrc/ggml-backend.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "206"
+                  endingLineNumber = "206"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "62EB2E8C-9441-43DB-BB6E-636BFF22946D - dd40b43e52da2ed4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ggml_backend_cpu_buffer_get_base"
+                  moduleName = "llamaFramework"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/llama.cppSrc/ggml-backend.c"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "206"
+                  endingLineNumber = "206"
+                  offsetFromSymbolStart = "0">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "991CB0C7-DD84-4AFD-B987-B54D84A92784"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "llamaMacExample/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "startChat(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "991CB0C7-DD84-4AFD-B987-B54D84A92784 - 94fdfbce9e662a7e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable () -&gt; () in llamaMacExample.ViewController.startChat(Any) -&gt; ()"
+                  moduleName = "llamaMacExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/iOS%20Llama%20Example/llamaMacExample/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  uuid = "991CB0C7-DD84-4AFD-B987-B54D84A92784 - 918413c934413044"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #2 (Swift.Optional&lt;Swift.UnsafePointer&lt;Swift.Int8&gt;&gt;) -&gt; () in implicit closure #1 (llamaMacExample.ViewController) -&gt; (Swift.Optional&lt;Swift.UnsafePointer&lt;Swift.Int8&gt;&gt;) -&gt; () in closure #1 @Sendable () -&gt; () in llamaMacExample.ViewController.startChat(Any) -&gt; ()"
+                  moduleName = "llamaMacExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/iOS%20Llama%20Example/llamaMacExample/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "991CB0C7-DD84-4AFD-B987-B54D84A92784 - 94fdfbce9e662af2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable () -&gt; () in llamaMacExample.ViewController.startChat(Any) -&gt; ()"
+                  moduleName = "llamaMacExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/iOS%20Llama%20Example/llamaMacExample/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  uuid = "991CB0C7-DD84-4AFD-B987-B54D84A92784 - 918413c9344130c8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #2 (Swift.Optional&lt;Swift.UnsafePointer&lt;Swift.Int8&gt;&gt;) -&gt; () in implicit closure #1 (llamaMacExample.ViewController) -&gt; (Swift.Optional&lt;Swift.UnsafePointer&lt;Swift.Int8&gt;&gt;) -&gt; () in closure #1 @Sendable () -&gt; () in llamaMacExample.ViewController.startChat(Any) -&gt; ()"
+                  moduleName = "llamaMacExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/iOS%20Llama%20Example/llamaMacExample/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "991CB0C7-DD84-4AFD-B987-B54D84A92784 - 94fdfbce9e662af2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable () -&gt; () in llamaMacExample.ViewController.startChat(Any) -&gt; ()"
+                  moduleName = "llamaMacExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/iOS%20Llama%20Example/llamaMacExample/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  uuid = "991CB0C7-DD84-4AFD-B987-B54D84A92784 - 94fdfbce9e662b51"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable () -&gt; () in llamaMacExample.ViewController.startChat(Any) -&gt; ()"
+                  moduleName = "llamaMacExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/iOS%20Llama%20Example/llamaMacExample/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  uuid = "991CB0C7-DD84-4AFD-B987-B54D84A92784 - 918413c93441316b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "implicit closure #2 (Swift.Optional&lt;Swift.UnsafePointer&lt;Swift.Int8&gt;&gt;) -&gt; () in implicit closure #1 (llamaMacExample.ViewController) -&gt; (Swift.Optional&lt;Swift.UnsafePointer&lt;Swift.Int8&gt;&gt;) -&gt; () in closure #1 @Sendable () -&gt; () in llamaMacExample.ViewController.startChat(Any) -&gt; ()"
+                  moduleName = "llamaMacExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/iOS%20Llama%20Example/llamaMacExample/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "40">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D7BF998E-F1C4-4C8C-ADB7-5B89C3F46CDD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOS Llama Example/LlamaCpp.mm"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "-completionHnadlerMethod"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D7BF998E-F1C4-4C8C-ADB7-5B89C3F46CDD - 7bdb392d7c6a20bf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[LlamaCppWrapper completionHnadler]"
+                  moduleName = "iOS Llama Example"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/iOS%20Llama%20Example/iOS%20Llama%20Example/LlamaCpp.mm"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "D7BF998E-F1C4-4C8C-ADB7-5B89C3F46CDD - 714f7a3999e82443"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[LlamaCppWrapper completionHnadler]"
+                  moduleName = "llamaMacExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/iOS%20Llama%20Example/iOS%20Llama%20Example/LlamaCpp.mm"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "D7BF998E-F1C4-4C8C-ADB7-5B89C3F46CDD - a96f054c61a0852d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[LlamaCppWrapper completionHnadlerMethod]"
+                  moduleName = "llamaMacExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/iOS%20Llama%20Example/iOS%20Llama%20Example/LlamaCpp.mm"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "96"
+                  endingLineNumber = "96"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CB195EF1-5686-4049-B440-8A13479AF9C8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOS Llama Example/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "replyEnd()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "31F81DEE-C6E1-4197-9D7D-469C5BDE2FDA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "llamaMacExample/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "replyEnd()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

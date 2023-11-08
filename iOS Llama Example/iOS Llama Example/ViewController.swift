@@ -8,15 +8,21 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
 
     @IBOutlet weak var submitButton: UIButton!
     @IBOutlet weak var chatText: UITextView!
     @IBOutlet weak var topicsText: UITextField!
     let modelName = "mistral-7b-instruct-v0.1.Q4_K_M.gguf"
+    var llamaWrapper: LlamaCppWrapper!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        topicsText.delegate = self
+        llamaWrapper = LlamaCppWrapper()
+        llamaWrapper.loadModel(modelName)
+        llamaWrapper.delegate = self
+    topicsText.delegate = self
         
         copyModel(modelName)
     }
@@ -40,11 +46,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func submit(_ sender: Any)  {
-        let question = UnsafePointer<Int8>(self.topicsText.text!)
-        //submitButton.isEnabled = false
-        //if topicsText.hasText {
+        let question = self.topicsText.text //UnsafePointer<Int8>(self.topicsText.text!)
+        self.submitButton.isEnabled = false
         DispatchQueue.global(qos: .userInitiated).async {
-            LlamaCpp.start(question, completion: self.llamaCallback(_:))
+            self.llamaWrapper.chat(question, response: self.llamaCallback(_:))
         }
     }
     
@@ -68,3 +73,12 @@ extension ViewController: UITextFieldDelegate {
 
     }
 }
+
+extension ViewController: LlamaCppWrapperDelegate {
+    func replyEnd() {
+        DispatchQueue.main.async {
+            self.submitButton.isEnabled = true
+        }
+    }
+}
+

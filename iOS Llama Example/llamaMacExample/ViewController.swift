@@ -10,6 +10,7 @@ import Cocoa
 class ViewController: NSViewController {
     @IBOutlet weak var topicstext: NSTextField!
     
+    @IBOutlet weak var submitButton: NSButton!
     @IBOutlet var answerText: NSTextView!
     @IBOutlet weak var questionText: NSTextField!
     let modelName = "mistral-7b-instruct-v0.1.Q4_K_M.gguf"
@@ -19,6 +20,7 @@ class ViewController: NSViewController {
     override func viewDidLoad() {
         llamaWrapper = LlamaCppWrapper()
         llamaWrapper.loadModel(modelName)
+        llamaWrapper.delegate = self
         super.viewDidLoad()
         copyFilesFromBundleToDocumentsFolderWith(fileExtension: ".gguf")
 
@@ -47,21 +49,22 @@ class ViewController: NSViewController {
     
     @IBAction func startChat(_ sender: Any) {
         let questionStr = self.questionText.stringValue
+        self.submitButton.isEnabled = false
         DispatchQueue.global(qos: .userInitiated).async {
             
-            self.llamaWrapper.chat(questionStr, completion: self.llamaCallback(_:))
-            /*var args: [String]
+            self.llamaWrapper.chat(questionStr, response: self.llamaCallback(_:))
+            /*sample parameters:
              const char args_const[6][128]={" ./main", "-m", "models/mistral-7b-instruct-v0.1.Q4_K_M.gguf", "-p", "what date is today", "-e"};
-             for(int i=0;i<6;i++) {
-             args[i] = (char*)malloc(sizeof(char)*128);
-             strcpy(args[i], args_const[i]);
-             }
-             //strcpy(args[4], "what date is today");
-             
-             printf("%s", args[1]);
-             llama_main(5, (char**)args);*/
+             */
         }
     }
     
 }
 
+extension ViewController: LlamaCppWrapperDelegate {
+    func replyEnd() {
+        DispatchQueue.main.async {
+            self.submitButton.isEnabled = true
+        }
+    }
+}

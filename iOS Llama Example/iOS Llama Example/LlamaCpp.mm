@@ -12,7 +12,7 @@
 #include <string>
 
 
-int llama_main(int argc, char ** argv, void (*callback)(const char*));
+int llama_main(int argc, char ** argv, void (*callback)(const char*), void (*completion)(void));
 
 using namespace std;
 
@@ -22,8 +22,17 @@ const int MODEL_NAME_LENGTH = 512;
 typedef void (^ llamaHandlerType)(const char*);
 static llamaHandlerType _llamaHandler;
 
+static LlamaCppWrapper* wrapper;
+
 @implementation LlamaCppWrapper {
-    NSMutableDictionary* classifiers;
+    //void(*completionHandler)();
+}
+
+-(id)init {
+    self = [super init];
+    //completionHandler = [self completionHandlerMethod];
+    wrapper = self;
+    return self;
 }
 
 -(void) loadModel: (const char*) modelName {
@@ -38,7 +47,11 @@ void  llamaCallback(const char* ret) {
     
 }
 
-- (void) chat: (const char*)prompt completion:(void (^)(const char *))callback {
+void completionHandler() {
+    [wrapper completionHnadlerMethod];
+}
+
+- (void) chat: (const char*)prompt response:(void (^)(const char *))callback { //complete: (void(*)(void))completionFunction;
     if(chatBuffer == nullptr) {
         chatBuffer = (char*)malloc(sizeof(char)*2048);
         chatBuffer[0] = NULL;
@@ -52,24 +65,35 @@ void  llamaCallback(const char* ret) {
     int argc = 9 ;//sizeof(args_const);
     for(int i=0;i<argc;i++) {
         args[i] = (char*)malloc(sizeof(char)*128);
-            if(i==2){
-                strcpy(args[2], "models/");
-                strcat(args[2], modelName);
-            }
-            if(i==3){
-                strcpy(args[3], "-p");
-            }
-            if(i==4){
-                strcpy(args[4], prompt);
-            }
+        if(i==2){
+            strcpy(args[2], "models/");
+            strcat(args[2], modelName);
+        }
+        if(i==3){
+            strcpy(args[3], "-p");
+        }
+        if(i==4){
+            strcpy(args[4], prompt);
+        }
         else {
             strcpy(args[i], args_const[i]);
         }
     }
-    //strcpy(args[4], "what date is today");
-
+    if(std::string(args[4]).empty()) {
+        strcpy(args[4], "what date is today");
+    }
+    
     //printf("%s", args[1]);
-    llama_main(5, (char**)args, &llamaCallback);
+    // this method does not work
+    /*self->completionHandler = [self](void) {
+        [self  completionHnadlerMethod];
+    };*/
+    
+    llama_main(5, (char**)args, &llamaCallback, completionHandler);
+}
+
+- (void) completionHnadlerMethod {
+    [self->_delegate replyEnd];
 }
 
 @end
