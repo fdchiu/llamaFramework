@@ -2723,6 +2723,38 @@
             endingLineNumber = "39"
             landmarkName = "-loadModel:"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0CCCBBD5-9B08-413E-B2DE-E6501FF6D457 - 27d5774d02c512c2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[LlamaCppWrapper loadModel:]"
+                  moduleName = "llamaMacExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/ExampleApps/LlamaInterface/LlamaCpp.mm"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "0CCCBBD5-9B08-413E-B2DE-E6501FF6D457 - 32a3c86f38f976fc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[LlamaCppWrapper loadModel:]"
+                  moduleName = "llamaIOSExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/ExampleApps/LlamaInterface/LlamaCpp.mm"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -2850,6 +2882,22 @@
             startingLineNumber = "96"
             endingLineNumber = "96"
             landmarkName = "showCreataAIHelp(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "30DAA959-A251-46BB-AE90-3F047DEAAF38"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "llamaIOSExample/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
+            landmarkName = "documentPicker(_:didPickDocumentsAt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

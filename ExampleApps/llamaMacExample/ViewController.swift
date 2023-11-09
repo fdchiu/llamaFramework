@@ -87,7 +87,7 @@ class ViewController: NSViewController {
         }
     }
     @IBAction func download(_ sender: Any) {
-        if let url = URL(string: "https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.1-GGUF/blob/main/mistral-7b-instruct-v0.1.Q4_K_M.gguf") {
+        if let url = URL(string: "https://huggingface.co/TheBloke/Mistral-7B-v0.1-GGUF/blob/main/mistral-7b-v0.1.Q4_K_M.gguf") {
             NSWorkspace.shared.open(url)
         }
     }

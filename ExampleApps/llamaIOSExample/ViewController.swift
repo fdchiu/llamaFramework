@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import MobileCoreServices
+import UniformTypeIdentifiers
 
 class ViewController: UIViewController {
     
@@ -13,18 +15,33 @@ class ViewController: UIViewController {
     @IBOutlet weak var submitButton: UIButton!
     @IBOutlet weak var chatText: UITextView!
     @IBOutlet weak var topicsText: UITextField!
-    let modelName = "mistral-7b-instruct-v0.1.Q4_K_M.gguf"
+    @IBOutlet weak var modelNameText: UILabel!
+    var modelName: String? {
+        didSet {
+            UserDefaults.standard.setValue(modelName, forKey: "modelPath")
+        }
+    } //= "mistral-7b-instruct-v0.1.Q4_K_M.gguf"
     var llamaWrapper: LlamaCppWrapper!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        modelName = UserDefaults.standard.string(forKey: "modelPath")
+
         // Do any additional setup after loading the view.
         llamaWrapper = LlamaCppWrapper()
-        llamaWrapper.loadModel(modelName)
+        if modelName != nil {            
+            llamaWrapper.loadModel(modelName)
+            if let fileUrl = NSURL(string: modelName!) , fileUrl.lastPathComponent != nil {
+                self.modelNameText.text = fileUrl.lastPathComponent!
+            }
+            submitButton.isEnabled = true
+        } else {
+            submitButton.isEnabled = false
+        }
         llamaWrapper.delegate = self
     topicsText.delegate = self
         
-        copyModel(modelName)
+        //copyModel(modelName)
     }
     
     func copyModel(_ name: String) {
@@ -53,6 +70,33 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func selectModel(_ sender: Any) {
+        let documentPicker = UIDocumentPickerViewController(forOpeningContentTypes: [UTType.item], asCopy: false)
+        documentPicker.delegate = self
+        documentPicker.modalPresentationStyle = .formSheet
+
+        self.present(documentPicker, animated: true, completion: nil)
+    }
+    @IBAction func download(_ sender: Any) {
+        if let url = URL(string: "https://huggingface.co/TheBloke/Mistral-7B-v0.1-GGUF/blob/main/mistral-7b-v0.1.Q4_K_M.gguf") {
+            UIApplication.shared.open(url)
+        }
+
+    }
+    @IBAction func showCreataAIHelp(_ sender: Any) {
+        if let url = URL(string: "https://creataai.com/llamaframework") {
+            UIApplication.shared.open(url)
+        }
+
+    }
+
+    @IBAction func showLlamaCppSite(_ sender: Any) {
+        if let url = URL(string: "https://github.com/ggerganov/llama.cpp") {
+            UIApplication.shared.open(url)
+        }
+
+    }
+
 }
 
 
@@ -80,5 +124,17 @@ extension ViewController: LlamaCppWrapperDelegate {
             self.submitButton.isEnabled = true
         }
     }
+}
+
+extension ViewController: UIDocumentPickerDelegate {
+    func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentsAt urls: [URL]) {
+        if (!urls.isEmpty) {
+            let path: String = urls[0].absoluteString
+            self.modelName = path
+            llamaWrapper.loadModel(self.modelName)
+            self.submitButton.isEnabled = true
+            self.modelNameText.text = urls[0].lastPathComponent
+        }
+     }
 }
 
