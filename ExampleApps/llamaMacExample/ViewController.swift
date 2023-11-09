@@ -13,16 +13,32 @@ class ViewController: NSViewController {
     @IBOutlet weak var submitButton: NSButton!
     @IBOutlet var answerText: NSTextView!
     @IBOutlet weak var questionText: NSTextField!
-    let modelName = "mistral-7b-instruct-v0.1.Q4_K_M.gguf"
+    @IBOutlet weak var modelNameText: NSTextField!
+    
+    var modelName: String? {//mistral-7b-instruct-v0.1.Q4_K_M.gguf"
+        didSet {
+            UserDefaults.standard.setValue(modelName, forKey: "modelPath")
+        }
+    }
     
     var llamaWrapper: LlamaCppWrapper!
     
     override func viewDidLoad() {
+        modelName = UserDefaults.standard.string(forKey: "modelPath")
         llamaWrapper = LlamaCppWrapper()
-        llamaWrapper.loadModel(modelName)
+        if modelName != nil {
+            llamaWrapper.loadModel(modelName)
+            if let fileUrl = NSURL(string: modelName!) , fileUrl.lastPathComponent != nil {
+                self.modelNameText.stringValue = fileUrl.lastPathComponent!
+            }
+
+            submitButton.isEnabled = true
+        } else {
+            submitButton.isEnabled = false
+        }
         llamaWrapper.delegate = self
         super.viewDidLoad()
-        copyFilesFromBundleToDocumentsFolderWith(fileExtension: ".gguf")
+        //copyFilesFromBundleToDocumentsFolderWith(fileExtension: ".gguf")
 
         // Do any additional setup after loading the view.
     }
@@ -58,7 +74,32 @@ class ViewController: NSViewController {
              */
         }
     }
+    @IBAction func selectModel(_ sender: Any) {
+        if let modelPath = filePicker(fileExtension: ["gguf"]) {
+            self.modelName = modelPath
+            if let fileUrl = NSURL(string: modelPath) , fileUrl.lastPathComponent != nil {
+                self.modelNameText.stringValue = fileUrl.lastPathComponent!
+            }
+            
+            llamaWrapper.loadModel(modelPath)
+            self.submitButton.isEnabled = true
+            print("\(modelPath)")
+        }
+    }
+    @IBAction func download(_ sender: Any) {
+        if let url = URL(string: "https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.1-GGUF/blob/main/mistral-7b-instruct-v0.1.Q4_K_M.gguf") {
+            NSWorkspace.shared.open(url)
+        }
+    }
     
+    @IBAction func showCreataAIHelp(_ sender: Any) {
+        if let url = URL(string: "https://creataai.com/llamaframework") {
+            NSWorkspace.shared.open(url)
+        }
+
+    }
+    @IBAction func llamaCPPHelp(_ sender: Any) {
+    }
 }
 
 extension ViewController: LlamaCppWrapperDelegate {

@@ -33,6 +33,7 @@
 		63FEF31B2AFC1102000FBA4B /* llama_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 63FEF3102AFC1102000FBA4B /* llama_main.cpp */; };
 		63FEF31C2AFC1102000FBA4B /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FEF3132AFC1102000FBA4B /* Helper.swift */; };
 		63FEF31D2AFC1102000FBA4B /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FEF3132AFC1102000FBA4B /* Helper.swift */; };
+		63FEF31F2AFC1EE7000FBA4B /* FilePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FEF31E2AFC1EE7000FBA4B /* FilePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -87,6 +88,7 @@
 		63FEF3112AFC1102000FBA4B /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
 		63FEF3122AFC1102000FBA4B /* LlamaCpp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LlamaCpp.h; sourceTree = "<group>"; };
 		63FEF3132AFC1102000FBA4B /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		63FEF31E2AFC1EE7000FBA4B /* FilePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				636387E92AF5634100157A01 /* Assets.xcassets */,
 				636387EB2AF5634100157A01 /* Main.storyboard */,
 				636387EE2AF5634100157A01 /* llamaMacExample.entitlements */,
+				63FEF31E2AFC1EE7000FBA4B /* FilePicker.swift */,
 			);
 			path = llamaMacExample;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63FEF31B2AFC1102000FBA4B /* llama_main.cpp in Sources */,
+				63FEF31F2AFC1EE7000FBA4B /* FilePicker.swift in Sources */,
 				63FEF31D2AFC1102000FBA4B /* Helper.swift in Sources */,
 				63FEF3152AFC1102000FBA4B /* Util.cpp in Sources */,
 				63FEF3172AFC1102000FBA4B /* LlamaCpp.mm in Sources */,

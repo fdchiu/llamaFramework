@@ -179,10 +179,15 @@ int llama_main(int argc, char ** argv, void (*callback)(const char*), void (*com
     g_ctx = &ctx;
 
     char* filePath = getFilePath();
-    strcat(filePath, "/");
-    strcat(filePath, params.model.c_str());
+    
+    // model is in a relative path
+    if(params.model[0] != '/') {
+        strcat(filePath, "/");
+        strcat(filePath, params.model.c_str());
+        params.model = filePath;
+    }
 
-    params.model = filePath;
+    
     // load the model and apply lora adapter, if any
     LOG("%s: load the model and apply lora adapter, if any\n", __func__);
     std::tie(model, ctx) = llama_init_from_gpt_params(params);

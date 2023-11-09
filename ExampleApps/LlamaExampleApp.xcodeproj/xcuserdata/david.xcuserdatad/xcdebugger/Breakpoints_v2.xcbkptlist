@@ -2438,8 +2438,8 @@
             filePath = "llamaMacExample/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
             landmarkName = "startChat(_:)"
             landmarkType = "7">
             <Locations>
@@ -2640,9 +2640,216 @@
             filePath = "llamaMacExample/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
             landmarkName = "replyEnd()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "05D2C514-0114-4FA8-8329-FE250212F37F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "llamaMacExample/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "05D2C514-0114-4FA8-8329-FE250212F37F - c5545fbd59613987"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "llamaMacExample.ViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "llamaMacExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/ExampleApps/llamaMacExample/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "1792">
+               </Location>
+               <Location
+                  uuid = "05D2C514-0114-4FA8-8329-FE250212F37F - c5545fbd59613987"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "llamaMacExample.ViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "llamaMacExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/ExampleApps/llamaMacExample/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "572">
+               </Location>
+               <Location
+                  uuid = "05D2C514-0114-4FA8-8329-FE250212F37F - c5545fbd59613987"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "llamaMacExample.ViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "llamaMacExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/ExampleApps/llamaMacExample/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "576">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0CCCBBD5-9B08-413E-B2DE-E6501FF6D457"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LlamaInterface/LlamaCpp.mm"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "-loadModel:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1BD78B4F-DE65-425E-BDAF-79A432C70CB5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "llamaMacExample/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "selectModel(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1BD78B4F-DE65-425E-BDAF-79A432C70CB5 - 16aa39fe378b9007"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "llamaMacExample.ViewController.selectModel(Any) -&gt; ()"
+                  moduleName = "llamaMacExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/ExampleApps/llamaMacExample/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "1148">
+               </Location>
+               <Location
+                  uuid = "1BD78B4F-DE65-425E-BDAF-79A432C70CB5 - 16aa39fe378b9007"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "llamaMacExample.ViewController.selectModel(Any) -&gt; ()"
+                  moduleName = "llamaMacExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/ExampleApps/llamaMacExample/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "156">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DCA73CDF-6B2C-4BFC-88B3-D5B1B546A00E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "llamaMacExample/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DCA73CDF-6B2C-4BFC-88B3-D5B1B546A00E - c5545fbd59613962"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "llamaMacExample.ViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "llamaMacExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/ExampleApps/llamaMacExample/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "104">
+               </Location>
+               <Location
+                  uuid = "DCA73CDF-6B2C-4BFC-88B3-D5B1B546A00E - c5545fbd59613962"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "llamaMacExample.ViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "llamaMacExample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/david/Project/llamaFramework/ExampleApps/llamaMacExample/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "108">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6CD6C0A1-9B43-4784-A4A4-8C9EBBF31558"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "llamaMacExample/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "modelName"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8E622B20-8E1F-4525-A1FD-03E715AAADBD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "llamaMacExample/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "showCreataAIHelp(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
