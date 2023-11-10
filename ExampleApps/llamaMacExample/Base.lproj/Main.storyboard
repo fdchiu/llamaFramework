@@ -771,13 +771,13 @@
                                     <action selector="submit:" target="XfG-lQ-9wD" id="BLZ-Iy-eOE"/>
                                 </connections>
                             </textField>
-                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0ss-C6-9dv" userLabel="logo">
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0ss-C6-9dv" userLabel="logo" customClass="ClickableImageView" customModule="llamaMacExample" customModuleProvider="target">
                                 <rect key="frame" x="535" y="597" width="40" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="4Yx-C1-oLN"/>
                                     <constraint firstAttribute="width" constant="40" id="jRq-2e-xDK"/>
                                 </constraints>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="creataAIcon" id="yJe-b0-G9j"/>
+                                <imageCell key="cell" alignment="left" imageScaling="proportionallyDown" image="creataAIcon" id="yJe-b0-G9j"/>
                                 <connections>
                                     <action selector="showCreataAIHelp:" target="XfG-lQ-9wD" id="WcL-sy-bBu"/>
                                 </connections>

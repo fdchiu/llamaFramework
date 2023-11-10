@@ -61,8 +61,8 @@ void completionHandler() {
     _llamaHandler = [callback copy];
     char *args[10];
     std::string params[] = {" ./main", "-m", "-p"};
-    const char args_const[][128]={"./main", "-m", "models/mistral-7b-instruct-v0.1.Q4_K_M.gguf", "-p", "what date is today", "-n", "-2", "-i", "-e"};
-    int argc = 9 ;//sizeof(args_const);
+    const char args_const[][128]={"./main", "-m", "models/mistral-7b-instruct-v0.1.Q4_K_M.gguf", "-p", "what date is today", "-n", "-2", "-i", "-e", "--log-disable"};
+    int argc = 10 ;//sizeof(args_const);
     for(int i=0;i<argc;i++) {
         args[i] = (char*)malloc(sizeof(char)*128);
         if(i==2){

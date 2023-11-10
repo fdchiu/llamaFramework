@@ -23,6 +23,7 @@
 		63E836C02AF01FCD008EF2E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63E836BE2AF01FCD008EF2E2 /* Main.storyboard */; };
 		63E836C22AF01FCE008EF2E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63E836C12AF01FCE008EF2E2 /* Assets.xcassets */; };
 		63E836C52AF01FCE008EF2E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63E836C32AF01FCE008EF2E2 /* LaunchScreen.storyboard */; };
+		63FEC6082AFECCFE00F1DCD6 /* ClickableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FEC6072AFECCFE00F1DCD6 /* ClickableImageView.swift */; };
 		63FEF3142AFC1102000FBA4B /* Util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 63FEF30C2AFC1102000FBA4B /* Util.cpp */; };
 		63FEF3152AFC1102000FBA4B /* Util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 63FEF30C2AFC1102000FBA4B /* Util.cpp */; };
 		63FEF3162AFC1102000FBA4B /* LlamaCpp.mm in Sources */ = {isa = PBXBuildFile; fileRef = 63FEF30E2AFC1102000FBA4B /* LlamaCpp.mm */; };
@@ -80,6 +81,7 @@
 		63E836C42AF01FCE008EF2E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63E836C62AF01FCE008EF2E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63E836D12AF05A62008EF2E2 /* LlamaIOSExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LlamaIOSExample.entitlements; sourceTree = "<group>"; };
+		63FEC6072AFECCFE00F1DCD6 /* ClickableImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickableImageView.swift; sourceTree = "<group>"; };
 		63FEF30C2AFC1102000FBA4B /* Util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Util.cpp; sourceTree = "<group>"; };
 		63FEF30D2AFC1102000FBA4B /* Llama-Example-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Llama-Example-Bridging-Header.h"; sourceTree = "<group>"; };
 		63FEF30E2AFC1102000FBA4B /* LlamaCpp.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LlamaCpp.mm; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				636387EB2AF5634100157A01 /* Main.storyboard */,
 				636387EE2AF5634100157A01 /* llamaMacExample.entitlements */,
 				63FEF31E2AFC1EE7000FBA4B /* FilePicker.swift */,
+				63FEC6072AFECCFE00F1DCD6 /* ClickableImageView.swift */,
 			);
 			path = llamaMacExample;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				63FEF31F2AFC1EE7000FBA4B /* FilePicker.swift in Sources */,
 				63FEF31D2AFC1102000FBA4B /* Helper.swift in Sources */,
 				63FEF3152AFC1102000FBA4B /* Util.cpp in Sources */,
+				63FEC6082AFECCFE00F1DCD6 /* ClickableImageView.swift in Sources */,
 				63FEF3172AFC1102000FBA4B /* LlamaCpp.mm in Sources */,
 				636387E82AF5634000157A01 /* ViewController.swift in Sources */,
 				63FEF3192AFC1102000FBA4B /* ggml-metal.metal in Sources */,

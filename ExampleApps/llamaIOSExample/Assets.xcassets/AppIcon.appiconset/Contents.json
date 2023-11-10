@@ -1,6 +1,7 @@
 {
   "images" : [
     {
+      "filename" : "llamaFramework_logo.jpg",
       "idiom" : "universal",
       "platform" : "ios",
       "size" : "1024x1024"
