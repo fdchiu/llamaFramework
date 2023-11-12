@@ -2,6 +2,7 @@
 
 # Llama Framework
 ![creata ai llama framework ai](https://creataai.com/img/llama_framework_letter_logo.jpg)
+
 I created this framework to allow developers to integrate and use the functionality of llama.cpp in their apps targeting iOS and MacOS development.
 
 The framework allows the developers to implement OpenAI chatGPT like LLM (large language model) based apps with theLLM model running locally on the devices: iPhone (yes) and MacOS with M1 or later machine. Developers can essentially build apps that allow the users to chat with the files locally on their device, or  contents of internet documents without relying on OpenAI's GPT which does not have any knowledge of the users' documents (of course unless you have mastered embedding technology which could be expensive at additional charges). Since users' documents stay local, this does provide a tremendous advantage in privacy protection. Any business definitely does not want to leak the contents of their internal documents to competitors or hackers because of the need to upload embeddings of the documents or the document itself to the cloud.
