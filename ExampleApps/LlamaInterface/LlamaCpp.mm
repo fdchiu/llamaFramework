@@ -66,13 +66,15 @@ void completionHandler() {
     for(int i=0;i<argc;i++) {
         args[i] = (char*)malloc(sizeof(char)*128);
         if(i==2){
-            strcpy(args[2], "models/");
+            if(modelName[0] != '/') {
+                strcpy(args[2], "models/");
+            }
             strcat(args[2], modelName);
         }
-        if(i==3){
+        else if(i==3){
             strcpy(args[3], "-p");
         }
-        if(i==4){
+        else if(i==4){
             strcpy(args[4], prompt);
         }
         else {
@@ -89,7 +91,10 @@ void completionHandler() {
         [self  completionHnadlerMethod];
     };*/
     
-    llama_main(5, (char**)args, &llamaCallback, completionHandler);
+    int ret = llama_main(5, (char**)args, &llamaCallback, completionHandler);
+    if(ret > 0) {
+        [self->_delegate replyEnd];
+    }
 }
 
 - (void) completionHnadlerMethod {
