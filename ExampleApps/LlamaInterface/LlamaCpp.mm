@@ -17,7 +17,8 @@ int llama_main(int argc, char ** argv, void (*callback)(const char*), void (*com
 using namespace std;
 
 char* chatBuffer = nullptr;
-const int MODEL_NAME_LENGTH = 512;
+const int MODEL_NAME_LENGTH = 1024;
+const int CHAT_BUFFER_LENGTH = 10240; //10K BUFFER
 
 typedef void (^ llamaHandlerType)(const char*);
 static llamaHandlerType _llamaHandler;
@@ -42,7 +43,7 @@ static LlamaCppWrapper* wrapper;
 
 void  llamaCallback(const char* ret) {
     printf("%s", ret);
-    strcat(chatBuffer, ret);
+    strncat(chatBuffer, ret, CHAT_BUFFER_LENGTH-strlen(chatBuffer)-1);
     _llamaHandler(chatBuffer);
     
 }
@@ -53,7 +54,7 @@ void completionHandler() {
 
 - (void) chat: (const char*)prompt response:(void (^)(const char *))callback { //complete: (void(*)(void))completionFunction;
     if(chatBuffer == nullptr) {
-        chatBuffer = (char*)malloc(sizeof(char)*2048);
+        chatBuffer = (char*)malloc(sizeof(char)*CHAT_BUFFER_LENGTH);
         chatBuffer[0] = NULL;
     } else {
         chatBuffer[0] = NULL;
@@ -64,20 +65,23 @@ void completionHandler() {
     const char args_const[][128]={"./main", "-m", "models/mistral-7b-instruct-v0.1.Q4_K_M.gguf", "-p", "what date is today", "-n", "-2", "-i", "-e", "--log-disable"};
     int argc = 10 ;//sizeof(args_const);
     for(int i=0;i<argc;i++) {
-        args[i] = (char*)malloc(sizeof(char)*128);
         if(i==2){
             if(modelName[0] != '/') {
                 strcpy(args[2], "models/");
             }
-            strcat(args[2], modelName);
+            args[i] = (char*)malloc(sizeof(char)*(strlen(modelName)+1));
+            strcat(args[i], modelName);
         }
         else if(i==3){
-            strcpy(args[3], "-p");
+            args[i] = (char*)malloc(3*sizeof(char));
+            strcpy(args[i], "-p");
         }
         else if(i==4){
-            strcpy(args[4], prompt);
+            args[i] = (char*)malloc(sizeof(char)*(strlen(prompt)+1));
+            strcpy(args[i], prompt);
         }
         else {
+            args[i] = (char*)malloc(sizeof(char)*(strlen(args_const[i])+1));
             strcpy(args[i], args_const[i]);
         }
     }
